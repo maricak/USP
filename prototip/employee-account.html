@@ -43,33 +43,52 @@
                     aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="admin-index.html">
+                <a class="navbar-brand" href="./">
                     <img src="images/logo.png" alt="Logo">
                 </a>
-                <a class="navbar-brand hidden" href="admin-index.html">
+                <a class="navbar-brand hidden" href="./">
                     <img src="images/logo2.png" alt="Logo">
                 </a>
             </div>
-
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="">
-                        <a href="admin-index.html">
+                        <a href="statistics.html">
                             <i class="menu-icon fa fa-home"></i>
-                            Home
+                            Statistics
                         </a>
-                        <li class="">
-                            <a href="admin-accounts.html">
-                                <i class="menu-icon fa fa-users"></i>
-                                Accounts
-                            </a>
-                        </li>
-                        <li class="active">
-                            <a href="admin-settings.html">
-                                <i class="menu-icon fa fa-gear"></i>
-                                Settings
-                            </a>
-                        </li>
+                    </li>
+                    <li class="">
+                        <a href="accountList.html">
+                            <i class="menu-icon fa fa-female"></i>
+                            Account List
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="createAccount.html">
+                            <i class="menu-icon fa fa-male"></i>
+                            Create Account
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="userMessages.html">
+                            <i class="menu-icon fa fa-envelope"></i>
+                            Review User Messages
+                            <i class="count badge badge-danger">5</i>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="account.html">
+                            <i class="menu-icon fa fa-user"></i>
+                            My Account
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="login.html">
+                            <i class="menu-icon fa fa-sign-out"></i>
+                            Logout
+                        </a>
+                    </li>
 
                 </ul>
             </div>
@@ -86,14 +105,12 @@
 
         <!-- Header-->
         <header id="header" class="header">
-
-
             <div class="header-menu">
 
                 <div class="offset-sm-7 col-sm-5">
                     <div class="user-area float-right">
                         <!-- <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar"> -->
-                        <span>Welcome Marija!</span>
+                        <span>Welcome Stefan!</span>
                     </div>
                 </div>
             </div>
@@ -106,45 +123,46 @@
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Settings</h1>
+                        <h1>My account</h1>
                     </div>
                 </div>
             </div>
         </div>
         <div class="content mt-3">
             <div class="animated fadeIn">
-                
+
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="title">Set parameters</h4>
+                                <h4 class="title">Edit Profile</h4>
                             </div>
                             <form>
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-12">
+
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Parameter 1</label>
-                                                <input type="text" class="form-control border-input" placeholder="" value="">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" class="form-control border-input" placeholder="Email" value="stefan@gmail.com">
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Parameter 2</label>
-                                                <input type="text" class="form-control border-input" placeholder="" value="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Parameter 3</label>
-                                                <input type="email" class="form-control border-input" placeholder="" value="">
+                                                <label class=" form-control-label">Phone number</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-phone"></i>
+                                                    </div>
+                                                    <input class="form-control" value="(531) 412-8572">
+                                                </div>
+                                                <small class="form-text text-muted">ex. (391) 927-9436</small>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="text-center card-footer">
-                                    <button type="submit" class="btn btn-primary">Update</button>
+                                    <button type="submit" class="btn btn-primary">Update Profile</button>
                                 </div>
                             </form>
                         </div>
@@ -192,15 +210,18 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
+
         </div>
         <!-- .content -->
-        <footer class="text-center my-3"> Stefan Milanović 2015/0361
-            <br /> Marija Kostić 2015/0096 </footer>
-
-
+        <footer class="text-center my-3">
+            Stefan Milanović 2015/0361
+            <br /> Marija Kostić 2015/0096
+        </footer>
     </div>
+    </div>
+
     <!-- /#right-panel -->
 
     <!-- Right Panel -->
@@ -210,18 +231,6 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <script src="assets/js/lib/data-table/datatables.min.js"></script>
-    <script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
-    <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
-    <script src="assets/js/lib/data-table/buttons.bootstrap.min.js"></script>
-    <script src="assets/js/lib/data-table/jszip.min.js"></script>
-    <script src="assets/js/lib/data-table/pdfmake.min.js"></script>
-    <script src="assets/js/lib/data-table/vfs_fonts.js"></script>
-    <script src="assets/js/lib/data-table/buttons.html5.min.js"></script>
-    <script src="assets/js/lib/data-table/buttons.print.min.js"></script>
-    <script src="assets/js/lib/data-table/buttons.colVis.min.js"></script>
-    <script src="assets/js/lib/data-table/datatables-init.js"></script>
 
 </body>
 
