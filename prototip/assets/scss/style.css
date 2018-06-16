@@ -11,6 +11,11 @@
 * Tags: html, themplate, Sufee-Admin
 --------------------------------------------------------- */
 /* Bootstrap */
+
+.btn-primary {
+  background: #033274 !important;
+}
+
 @import url(../css/animate.css);
 .gaugejs-wrap {
   position: relative;
@@ -825,7 +830,7 @@ textarea {
   width: 100%; }
 
 aside.left-panel {
-  background: #272c33;
+  background: #033274;
   display: table-cell;
   height: 100vh;
   min-height: 100%;
@@ -835,7 +840,7 @@ aside.left-panel {
   transition: width 0.3s ease; }
 
 .navbar {
-  background: #272c33;
+  background: #033274;
   border-radius: 0;
   border: none;
   display: block;
@@ -2086,14 +2091,14 @@ header .form-inline {
     border-radius: 0 !important; }
     .dataTables_paginate .pagination li a {
       border-radius: 0 !important;
-      color: #272c33; }
+      color: #033274; }
     .dataTables_paginate .pagination li.active a {
-      background: #272c33;
-      border-color: #272c33;
+      background: #033274;
+      border-color: #033274;
       color: #fff; }
     .dataTables_paginate .pagination li:hover a {
-      background: #272c33;
-      border-color: #272c33;
+      background: #033274;
+      border-color: #033274;
       color: #fff; }
 
 @media (max-width: 1368px) {

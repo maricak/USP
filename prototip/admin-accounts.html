@@ -43,10 +43,10 @@
                     aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="./">
+                <a class="navbar-brand" href="admin-index.html">
                     <img src="images/logo.png" alt="Logo">
                 </a>
-                <a class="navbar-brand hidden" href="./">
+                <a class="navbar-brand hidden" href="admin-index.html">
                     <img src="images/logo2.png" alt="Logo">
                 </a>
             </div>
@@ -54,48 +54,22 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="">
-                        <a href="index.html">
+                        <a href="admin-index.html">
                             <i class="menu-icon fa fa-home"></i>
                             Home
                         </a>
-                    </li>
-                    <li class="">
-                        <a href="report.html">
-                            <i class="menu-icon fa fa-trash"></i>
-                            Report
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="bills.html">
-                            <i class="menu-icon fa fa-credit-card"></i>
-                            Bills
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="messages.html">
-                            <i class="menu-icon fa fa-envelope"></i>
-                            Messages
-                            <i class="count badge badge-danger">5</i>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="contact.html">
-                            <i class="menu-icon fa fa-phone"></i>
-                            Contact
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="account.html">
-                            <i class="menu-icon fa fa-user"></i>
-                            My Account
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="login.html">
-                            <i class="menu-icon fa fa-sign-out"></i>
-                            Logout
-                        </a>
-                    </li>
+                        <li class="active">
+                            <a href="admin-accounts.html">
+                                <i class="menu-icon fa fa-users"></i>
+                                Accounts
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="admin-settings.html">
+                                <i class="menu-icon fa fa-gear"></i>
+                                Settings
+                            </a>
+                        </li>
 
                 </ul>
             </div>
@@ -132,47 +106,14 @@
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Bills</h1>
+                        <h1>Accounts</h1>
                     </div>
                 </div>
             </div>
         </div>
         <div class="content mt-3">
             <div class="animated fadeIn">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="stat-widget-one">
-                                    <div class="stat-icon dib">
-                                        <i class="fa fa-dollar text-primary border-primary"></i>
-                                    </div>
-                                    <div class="stat-content dib">
-                                        <div class="stat-text">Last bill</div>
-                                        <div class="stat-digit">$ 20.00</div>
-                                        <div class="stat-foorer text-success">Payed</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="stat-widget-one">
-                                    <div class="stat-icon dib">
-                                        <i class="fa fa-recycle text-primary border-primary"></i>
-                                    </div>
-                                    <div class="stat-content dib">
-                                        <div class="stat-text">Kg recycled</div>
-                                        <div class="stat-digit">200.00 kg</div>
-                                        <div class="stat-footer">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
@@ -184,80 +125,133 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Month</th>
-                                            <th>Price</th>
-                                            <th>Status</th>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Surname</th>
+                                            <th>Senior</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>2018/02</td>
-                                            <td>$ 15.23</td>
-                                            <td class="text-success">
-                                                <a target="_blanks" href="https://stage.centili.com/widget/WidgetModule?api=564f47646ce7f954ad981d6b1b6166fc&country=RS&countrylock=true"
-                                                    class="text-danger">Pay</a>
+                                            <td>abc2</td>
+                                            <td>Stefan</td>
+                                            <td>
+                                                Milanović
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" />
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>2018/01</td>
-                                            <td>$ 15.23</td>
-                                            <td class="text-success">Payed</td>
+                                            <td>abc3</td>
+                                            <td>Stefan</td>
+                                            <td>
+                                                Milanović
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>2017/12</td>
-                                            <td>$ 15.23</td>
-                                            <td class="text-success">Payed</td>
+                                            <td>abc4</td>
+                                            <td>Stefan</td>
+                                            <td>
+                                                Milanović
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
-                                            <td>2017/11</td>
-                                            <td>$ 15.255</td>
-                                            <td class="text-success">Payed</td>
+                                            <td>abc5</td>
+                                            <td>Stefan</td>
+                                            <td>
+                                                Milanović
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
-                                            <td>2017/10</td>
-                                            <td>$ 15.23</td>
-                                            <td class="text-success">Payed</td>
+                                            <td>abc6</td>
+                                            <td>Stefan</td>
+                                            <td>
+                                                Milanović
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
-                                            <td>2017/09</td>
-                                            <td>$ 15.23</td>
-                                            <td class="text-success">Payed</td>
+                                            <td>abc7</td>
+                                            <td>Stefan</td>
+                                            <td>
+                                                Milanović
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>7</td>
-                                            <td>2017/08</td>
-                                            <td>$ 15.23</td>
-                                            <td class="text-success">Payed</td>
+                                            <td>abc8</td>
+                                            <td>Stefan</td>
+                                            <td>
+                                                Milanović
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>8</td>
-                                            <td>2017/07</td>
-                                            <td>$ 15.23</td>
-                                            <td class="text-success">Payed</td>
+                                            <td>abc9</td>
+                                            <td>Stefan</td>
+                                            <td>
+                                                Milanović
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>9</td>
-                                            <td>2017/06</td>
-                                            <td>$ 15.23</td>
-                                            <td class="text-success">Payed</td>
+                                            <td>abd1</td>
+                                            <td>Stefan</td>
+                                            <td>
+                                                Milanović
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>10</td>
-                                            <td>2017/05</td>
-                                            <td>$ 15.23</td>
-                                            <td class="text-success">Payed</td>
+                                            <td>abd2</td>
+                                            <td>Stefan</td>
+                                            <td>
+                                                Milanović
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>11</td>
-                                            <td>2017/04</td>
-                                            <td>$ 15.23</td>
-                                            <td class="text-success">Payed</td>
+                                            <td>abd3s</td>
+                                            <td>Stefan</td>
+                                            <td>
+                                                Milanović
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" />
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -268,10 +262,8 @@
             </div>
         </div>
         <!-- .content -->
-        <footer class="text-center my-3">
-            Stefan Milanović 2015/0361
-            <br /> Marija Kostić 2015/0096
-        </footer>
+        <footer class="text-center my-3"> Stefan Milanović 2015/0361
+            <br /> Marija Kostić 2015/0096 </footer>
 
 
     </div>
@@ -296,13 +288,6 @@
     <script src="assets/js/lib/data-table/buttons.print.min.js"></script>
     <script src="assets/js/lib/data-table/buttons.colVis.min.js"></script>
     <script src="assets/js/lib/data-table/datatables-init.js"></script>
-
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#bootstrap-data-table-export').DataTable();
-        });
-    </script>
 
 
 </body>
