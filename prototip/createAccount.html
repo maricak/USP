@@ -1,0 +1,342 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AGEDIS</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="assets/css/lib/chosen/chosen.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <!-- Left Panel -->
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="./">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <a class="navbar-brand hidden" href="./">
+                    <img src="images/logo2.png" alt="Logo">
+                </a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="statistics.html">
+                            <i class="menu-icon fa fa-home"></i>
+                            Statistics
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="accountList.html">
+                            <i class="menu-icon fa fa-female"></i>
+                            Account List
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="createAccount.html">
+                            <i class="menu-icon fa fa-male"></i>
+                            Create Account
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="userMessages.html">
+                            <i class="menu-icon fa fa-envelope"></i>
+                            Review User Messages
+                            <i class="count badge badge-danger">5</i>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="account.html">
+                            <i class="menu-icon fa fa-user"></i>
+                            My Account
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="login.html">
+                            <i class="menu-icon fa fa-sign-out"></i>
+                            Logout
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </aside>
+    <!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+
+
+            <div class="header-menu">
+
+                <div class="offset-sm-7 col-sm-5">
+                    <div class="user-area float-right">
+                        <!-- <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar"> -->
+                        <span>Welcome Stefan!</span>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- /header -->
+        <!-- Header-->
+
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Account Creation</h1>
+						<small> <i> Create an account for a citizen and bind it to their identification card</i></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content mt-3">
+		<form action="" method="post" class="form-horizontal">
+            <div class="animated fadeIn">
+
+                <div class="row">
+
+                    <div class="col-xs-6 col-sm-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Basic Information</strong>
+                            </div>
+                            <div class="card-body card-block">
+								
+								<div class="form-group">
+									<label for="name-input" class="form-control-label">Name</label>
+									<input type="text" id="name-input" name="name-input" class="form-control">
+								</div>
+								
+								<div class="form-group">
+									<label for="surname-input" class="form-control-label">Surname</label>
+									<input type="text" id="surname-input" name="surname-input" class="form-control">
+								</div>
+								
+                                <div class="form-group">
+                                    <label class=" form-control-label">Date of birth</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                        <input class="form-control">
+                                    </div>
+                                    <small class="form-text text-muted">ex. 12/03/1999</small>	
+                                </div>
+								
+								<div class="form-group">
+								<label class=" form-control-label">Country</label>
+                                  <select data-placeholder="Choose a Country..." class="standardSelect" tabindex="1">
+                                    <option value=""></option>
+                                    <option value="Serbia">Serbia</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="Finland">Finland</option>
+                                    <option value="Netherlands">Netherlands</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Croatia">Croatia</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+									<option value="Japan"> Japan </option>
+									<option value="United States of America">United States of America</option>
+                                    <option value="France">France</option>
+                                    <option value="Italy">Italy</option>
+								  </select>
+								</div>
+							
+								<div class="form-group">
+									<label for="city-input" class="form-control-label">City</label>
+									<input type="text" id="city-input" name="city-input" class="form-control">
+								</div>
+								
+                                <div class="form-group">
+                                    <label class=" form-control-label">Phone number</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control">
+                                    </div>
+                                    <small class="form-text text-muted">ex. (391) 927-9436</small>
+                                </div>
+                               
+                                
+                            </div>
+                        </div>
+						<div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">Physical Identification Card Information </strong>
+                            </div>
+							<div class="card-body">
+								<div class="form-group">
+									<label for="idcard-input" class="form-control-label">Card ID</label>
+									<input type="text" id="idcard-input" name="idcard-input" placeholder="9999-9999-9999-9999" class="form-control">
+								</div>
+							</div>                            
+                        </div>
+				   </div>
+
+                    <div class="col-xs-6 col-sm-6">
+                        
+						<div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">Administrative Information</strong>
+                            </div>
+							<div class="card-body">
+								<div class="form-group">
+									<label class=" form-control-label">Taxpayer Identification Numbers</label>
+									<div class="input-group">
+										<div class="input-group-addon"><i class="fa fa-usd"></i></div>
+										<input class="form-control">
+									</div>
+									<small class="form-text text-muted">ex. 99-9999999</small>
+								</div>
+								<div class="form-group">
+									<label class=" form-control-label">Social Security Number</label>
+									<div class="input-group">
+										<div class="input-group-addon"><i class="fa fa-male"></i></div>
+										<input class="form-control">
+									</div>
+									<small class="form-text text-muted">ex. 999-99-9999</small>
+								</div>
+								<div class="form-group">
+									<label class=" form-control-label">Credit Card Number</label>
+									<div class="input-group">
+										<div class="input-group-addon"><i class="fa fa-credit-card"></i></div>
+										<input class="form-control">
+									</div>
+									<small class="form-text text-muted">ex. 9999 9999 9999 9999</small>
+								</div>
+							</div>                            
+                        </div>
+						
+						<div class="card">
+                            <div class="card-header">
+								<strong class="card-title">Account Information</strong>
+                            </div>
+							<div class="card-body">
+								<div class="form-group">
+									<label for="email-input" class=" form-control-label">Email Address </label>
+									<input type="email" id="email-input" name="email-input" placeholder="Enter Email" class="form-control"><small class="text-muted form-text">We will never share your email address with anyone</small>
+								</div>
+								 
+								<div class="form-group">
+									<label for="password-input" class="form-control-label"> Password </label>
+									<input type="password" id="password-input" name="password-input" placeholder="Password" class="form-control"><small class="form-text text-muted">The user will be able to change the password at a later time at their own discretion</small>
+								</div>
+								
+								<div class="form-group">
+									<label for="password-input-conf" class="form-control-label"> Confirm Password </label>
+									<input type="password" id="password-input-conf" name="password-input-conf" placeholder="Confirm Password" class="form-control">
+								</div>
+							</div>                            
+                        </div>
+						
+                    </div>
+
+
+
+                </div>
+
+				<div class="row">
+					<div class="col-sm-12" style="text-align: center">
+						<div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">Confirmation</strong>
+                            </div>
+							<div class="card-body">								
+								<button type="submit" class="btn btn-primary btn-sm">
+								  <i class="fa fa-user"></i> Create Account
+								</button>
+								<button type="reset" class="btn btn-danger btn-sm">
+								  <i class="fa fa-ban"></i> Reset form
+								</button>
+							</div>                            
+                        </div>
+					</div>
+				</div>
+            </div><!-- .animated -->
+			</form>
+        </div><!-- .content -->
+
+		<footer class="text-center my-3">             Stefan Milanović 2015/0361             <br /> Marija Kostić 2015/0096         </footer>
+
+
+    </div>
+    <!-- /#right-panel -->
+
+    <!-- Right Panel -->
+
+
+    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+	<script src="assets/js/lib/chosen/chosen.jquery.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function() {
+            jQuery(".standardSelect").chosen({
+                disable_search_threshold: 10,
+                no_results_text: "Oops, nothing found!",
+                width: "100%"
+            });
+        });
+    </script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+    <!-- Gmaps -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2jlT6C_to6X1mMvR9yRWeRvpIgTXgddM"></script>
+    <script src="assets/js/lib/gmap/gmaps.js"></script>
+    <script src="assets/js/lib/gmap/gmap.init.js"></script>
+
+</body>
+
+</html>

@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/flag-icon.min.css">
     <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="assets/css/lib/datatable/dataTables.bootstrap.min.css">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
-
     <link rel="stylesheet" href="assets/scss/style.css">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
@@ -54,34 +54,28 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="">
-                        <a href="index.html">
+                        <a href="statistics.html">
                             <i class="menu-icon fa fa-home"></i>
-                            Home
+                            Statistics
                         </a>
                     </li>
                     <li class="">
-                        <a href="report.html">
-                            <i class="menu-icon fa fa-trash"></i>
-                            Report
+                        <a href="accountList.html">
+                            <i class="menu-icon fa fa-female"></i>
+                            Account List
                         </a>
                     </li>
                     <li class="">
-                        <a href="bills.html">
-                            <i class="menu-icon fa fa-credit-card"></i>
-                            Bills
+                        <a href="createAccount.html">
+                            <i class="menu-icon fa fa-male"></i>
+                            Create Account
                         </a>
                     </li>
                     <li class="active">
-                        <a href="messages.html">
+                        <a href="userMessages.html">
                             <i class="menu-icon fa fa-envelope"></i>
-                            Messages
+                            Review User Messages
                             <i class="count badge badge-danger">5</i>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="contact.html">
-                            <i class="menu-icon fa fa-phone"></i>
-                            Contact
                         </a>
                     </li>
                     <li class="">
@@ -119,7 +113,7 @@
                 <div class="offset-sm-7 col-sm-5">
                     <div class="user-area float-right">
                         <!-- <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar"> -->
-                        <span>Welcome Marija!</span>
+                        <span>Welcome Stefan!</span>
                     </div>
                 </div>
             </div>
@@ -132,47 +126,13 @@
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Messages</h1>
+                        <h1>Review User Messages </h1>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="content my-3">
-            <div class="animated fadeIn">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="stat-widget-one">
-                                    <div class="stat-icon dib">
-                                        <i class="fa fa-dollar text-primary border-primary"></i>
-                                    </div>
-                                    <div class="stat-content dib">
-                                        <div class="stat-text">Last bill</div>
-                                        <div class="stat-digit">$ 20.00</div>
-                                        <div class="stat-foorer text-success">Payed</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="stat-widget-one">
-                                    <div class="stat-icon dib">
-                                        <i class="fa fa-recycle text-primary border-primary"></i>
-                                    </div>
-                                    <div class="stat-content dib">
-                                        <div class="stat-text">Kg recycled</div>
-                                        <div class="stat-digit">200.00 kg</div>
-                                        <div class="stat-footer">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="content mt-3">
+		<div class="animated fadeIn">
                 <div class="row">
                     <div class="col-12" id="accordion">
                         <div class="card mb-0">
@@ -182,7 +142,7 @@
                                     <button class="btn btn-link mr-auto" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         Please add new trash can at the corner...
                                     </button>
-                                    <a href="contact.html" class="badge badge-primary">Reply</a>
+                                    <a href="contactUser.html" class="badge badge-primary">Reply</a>
                                 </h5>
                             </div>
 
@@ -210,9 +170,9 @@
                                     <hr />
                                     <div>
                                         <h4>
-                                            <b>From: </b> agedis@support.com
+                                            <b>From: </b> Airi
                                             <br />
-                                            <b>To: </b> Marija
+                                            <b>To: </b> agedis@support.com
                                             <br />
                                             <b>Date: </b> 2018/28/05
                                         </h4>
@@ -230,7 +190,7 @@
                                     <hr />
                                     <div>
                                         <h4>
-                                            <b>From:</b> Marija
+                                            <b>From:</b> Brendan
                                             <br />
                                             <b>To: </b> agedis@support.com
                                             <br />
@@ -256,7 +216,7 @@
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         Something is not working at the ... street trash can
                                     </button>
-                                    <a href="contact.html" class="badge badge-primary">Reply</a>
+                                    <a href="contactUser.html" class="badge badge-primary">Reply</a>
                                 </h5>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
@@ -283,9 +243,9 @@
                                     <hr />
                                     <div>
                                         <h4>
-                                            <b>From: </b> agedis@support.com
+                                            <b>From: </b> Stefan
                                             <br />
-                                            <b>To: </b> Marija
+                                            <b>To: </b> agedis@support.com
                                             <br />
                                             <b>Date: </b> 2018/28/05
                                         </h4>
@@ -303,7 +263,7 @@
                                     <hr />
                                     <div>
                                         <h4>
-                                            <b>From:</b> Marija
+                                            <b>From:</b> Airi
                                             <br />
                                             <b>To: </b> agedis@support.com
                                             <br />
@@ -326,23 +286,50 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- .content -->
-        <footer class="text-center my-3">
-            Stefan Milanović 2015/0361
-            <br /> Marija Kostić 2015/0096
-        </footer>
+		</div>		
+		<footer class="text-center my-3">             Stefan Milanović 2015/0361             <br /> Marija Kostić 2015/0096         </footer>
+
 
     </div>
     <!-- /#right-panel -->
 
     <!-- Right Panel -->
 
+	<script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/plugins.js"></script>
+		<script src="assets/js/main.js"></script>
 
-    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
+
+		<script src="assets/js/lib/data-table/datatables.min.js"></script>
+		<script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
+		<script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
+		<script src="assets/js/lib/data-table/buttons.bootstrap.min.js"></script>
+		<script src="assets/js/lib/data-table/jszip.min.js"></script>
+		<script src="assets/js/lib/data-table/pdfmake.min.js"></script>
+		<script src="assets/js/lib/data-table/vfs_fonts.js"></script>
+		<script src="assets/js/lib/data-table/buttons.html5.min.js"></script>
+		<script src="assets/js/lib/data-table/buttons.print.min.js"></script>
+		<script src="assets/js/lib/data-table/buttons.colVis.min.js"></script>
+		<script src="assets/js/lib/data-table/datatables-init.js"></script>
+
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			  $('#bootstrap-data-table-export').DataTable();
+			} );
+		</script>
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
 
 </body>
 
